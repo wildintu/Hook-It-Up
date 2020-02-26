@@ -4,7 +4,6 @@ import Home from './Home';
 import Details from './Details';
 
 const App = () => {
-    const[count, setCount] = useState(0);
 
     return(
         <Router>
