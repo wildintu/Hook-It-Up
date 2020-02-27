@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+// import { Link } from "react-router-dom";
+
 
 const Details = () => {
     const [details, setDetails] = useState([]);
@@ -8,9 +10,14 @@ const Details = () => {
             let response = await fetch('https://jsonplaceholder.typicode.com/posts');
             let details = await response.json();
             let arr = details.map((element, index) => {
-                return <h1 key={index}>{element.id}</h1>
+                return <p key={index}>
+                    {element.id}
+                    {element.title}
+                    {element.body}
+                    </p>
             })
-            console.log(arr)
+            
+            //console.log(details)
             setDetails(arr);
         }
         getFetch();
