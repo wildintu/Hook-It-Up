@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <React.Fragment>
-      <h1>Home</h1>
+      <h1>Hook It Up!</h1>
       {home}
     </React.Fragment>
   );
